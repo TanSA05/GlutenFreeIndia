@@ -13,7 +13,14 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font: MochaMattari-custom,"Helvetica Neue",Helvetica,Calibri,Arial,sans-serif;
+    -webkit-transition: font-size .3s ease;
+    -webkit-font-smoothing: antiliased;
+}
+
+h1,h2{
+    text-shadow: -1px 0 0 #fff;
 }
 
 .text-vertical-center {
