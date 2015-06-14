@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
 
     <title>Gluten Free Living India</title>
 
@@ -16,6 +17,8 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -32,14 +35,23 @@
 </head>
 
 <body>
-
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">MENU   <i class="fa fa-bars"></i></a>
+    <!-- GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG -->
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"><img alt="Brand" src="img/logo1.png"></a>
+            </div>
+            <a id="menu-toggle" href="#" style="color: #002366; text-decoration: none">MENU   <i class="fa fa-bars" style="color: #F94D00"></i></a>
+            <!-- initial class for button menu class="btn btn-dark btn-lg toggle" -->
+        </div>
+    </nav>
+    <!-- END GGGGGGG -->
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav" style="font-size: 30px; line-height: 30px">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >GLUTEN FREE INDIA</a>
+                <a href="#top"  onclick = $("#menu-close").click();  style="font-size: 17px">GLUTEN FREE INDIA</a>
             </li>
             <li>
                 <a href="#top" onclick = $("#menu-close").click(); >Home</a>
@@ -59,13 +71,15 @@
         </ul>
     </nav>
 
+<div class="div1" id="fullpage">    
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1><span style="color: white">Gluten Free</span> Living India</h1>
-            <h3>CDF India drives diagnosis and treatment of celiac disease <br>through advocacy, education and advancing research<br> to improve the quality of life for all people affected by<br> gluten-related disorders</h3>
+            <h1><span style="color: white">Gluten Free Living<br>India</span></h1>
+            <h3 style="color: #002366">India's Gluten-Free Food Community</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            <!--a href="#about" class="btn btn-dark btn-lg">Find Out More</a-->
+            <!-- <img src="img/taneea.png" style="float: right"> -->
         </div>
     </header>
 
@@ -74,16 +88,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 style="color: #F26531; font-size: 200px; text-decoration: line-through">1%</h1>
-                    <h1 style="color: #F26531; text-decoration: line-through; line-height: 1px">Of the population is suspected</h1>
+                    <h1 style="color: #F94D00; font-size: 200px; text-decoration: line-through">1%</h1>
+                    <h1 style="color: #F94D00; text-decoration: line-through; line-height: 1px">Of the population is suspected</h1>
                     <br><br>
-                    <h1 style="color: #000000; text-decoration: line-through">More popular than AIDs</h1>
-                    <h1 style="color: #000000">FIND OUT NOW</h1>
+                    <h1 style="color: #002366; text-decoration: line-through">More popular than AIDs</h1>
+                    <h1 style="color: #002366">FIND OUT NOW</h1>
                     <br>
-                    <a href="#about" class="btn btn-dark btn-lg" style="background-color: #F26531">Symptoms</a>
+                    <a href="#about" class="btn btn-dark btn-lg" style="background-color: #F94D00">Symptoms</a>
                 </div>
             </div>
             <!-- /.row -->
+            <a href="#" class="fb1" style="text-decoration: none">
+             W H Y 
+            </a>
         </div>
         <!-- /.container -->
     </section>
@@ -103,7 +120,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flag fa-stack-1x text-primary" style="color: #000000"></i>
+                                <i class="fa fa-flag fa-stack-1x text-primary" style="color: #002366"></i>
                             </span>
                                 <h2>
                                     <strong>Prevalence</strong>
@@ -117,7 +134,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-stethoscope fa-stack-1x text-primary" style="color: #000000"></i>
+                                <i class="fa fa-stethoscope fa-stack-1x text-primary" style="color: #002366"></i>
                             </span>
                                 <h2>
                                     <strong>Diagnosis</strong>
@@ -131,7 +148,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-medkit fa-stack-1x text-primary" style="color: #000000"></i>
+                                <i class="fa fa-medkit fa-stack-1x text-primary" style="color: #002366"></i>
                             </span>
                                 <h2>
                                     <strong>Treatment</strong>
@@ -145,7 +162,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-plus fa-stack-1x text-primary" style="color: #000000"></i>
+                                <i class="fa fa-plus fa-stack-1x text-primary" style="color: #002366"></i>
                             </span>
                                 <h2>
                                     <strong>More Info</strong>
@@ -161,6 +178,9 @@
                 <!-- /.col-lg-10 -->
             </div>
             <!-- /.row -->
+            <a href="#" class="fb2" style="text-decoration: none">
+             W H A T  
+            </a>
         </div>
         <!-- /.container -->
     </section>
@@ -178,16 +198,19 @@
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h1 style="color: #fff; font-size: 200px; text-decoration: line-through">XK</h1>
-                    <h1 style="color: #F26531; font-size: 75px; text-decoration: line-through; line-height: 1px">INDIANS</h1>
+                    <h1 style="color: #F94D00; font-size: 75px; text-decoration: line-through; line-height: 1px">INDIANS</h1>
                     <br><br>
-                    <h1 style="color: #F26531;text-decoration: line-through">GO UNDIAGNOSED DUE TO UNAWARENESS</h1>
-                    <h1 style="color: #F26531">LET'S INCREASE AWARENESS</h1>
+                    <h1 style="color: #F94D00;text-decoration: line-through">GO UNDIAGNOSED DUE TO UNAWARENESS</h1>
+                    <h1 style="color: #F94D00">LET'S INCREASE AWARENESS</h1>
                     <br>
                     <a href="#portfolio" class="btn btn-light btn-lg" style="background-color: #fff">Join Us</a>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
             <!-- /.row -->
+            <a href="#" class="fb3" style="text-decoration: none">
+             H O W 
+            </a>
         </div>
         <!-- /.container -->
     </section>
@@ -225,19 +248,19 @@
                     <h3>3481 Melrose Place<br>Beverly Hills, CA 90210</h3>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li ><i class="fa fa-envelope-o fa-fw"></i><a href="mailto:name@example.com" style="color: #000000">name@example.com</a>
+                        <li ><i class="fa fa-envelope-o fa-fw"></i><a href="mailto:name@example.com" style="color: #002366">name@example.com</a>
                         </li>
                     </ul>
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#" style="color: #000000"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="#" style="color: #002366"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#" style="color: #000000"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="#" style="color: #002366"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#" style="color: #000000"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            <a href="#" style="color: #002366"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
@@ -246,14 +269,17 @@
             </div>
         </div>
     </footer>
+</div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
     <script>
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
@@ -283,6 +309,16 @@
             }
         });
     });
+
+     // $(document).ready(function(){
+     //   $("#fullpage").slick({
+     //     vertical: true,
+     //     arrows: false,
+     //     verticalSwiping: true,
+     //     adaptiveHeight: true,
+     //     infinite: false
+     //   });
+     // });
     </script>
 
 </body>
