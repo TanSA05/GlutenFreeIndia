@@ -36,35 +36,58 @@
 
 <body>
     <!-- Navigation -->
-    <!-- GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG -->
+    <!-- Navbar -->
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#"><!-- img alt="Brand" src="img/logo1.png" -->Brand</a>
+              <a class="navbar-brand" href="#"><!-- img alt="Brand" src="img/logo1.png" --></a>
             </div>
             <a id="menu-toggle" href="#" style="color: #002366; text-decoration: none">MENU   <i class="fa fa-bars" style="color: #F94D00"></i></a>
             <!-- initial class for button menu class="btn btn-dark btn-lg toggle" -->
         </div>
     </nav>
-    <!-- END GGGGGGG -->
+    <!-- END Navbar -->
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav" style="font-size: 30px; line-height: 30px">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
                 <a href="#top"  onclick = $("#menu-close").click();  style="font-size: 17px">GLUTEN FREE INDIA</a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+            </li> -->
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >WHAT</a>
             </li>
             <li>
-                <a href="#about" onclick = $("#menu-close").click(); >Symptoms</a>
+                <a href="#services" onclick = $("#menu-close").click(); >WHY</a>
             </li>
             <li>
-                <a href="#services" onclick = $("#menu-close").click(); >What We Do</a>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >HOW</a>
+            </li>
+            <br>
+            <li>
+                <a href="#">Celiac Disease</a>
             </li>
             <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Join Us</a>
+                <a href="#">Wheat Allergy</a>
             </li>
+            <li>
+                <a href="#">Gluten &nbsp;&nbsp;Sensitivity</a>
+            </li>
+            <li>
+                <a href="#" class="where">Where</a>
+                    <li>
+                        <a href="#" class="grocery" style="font-size: 25px">&nbsp;&nbsp;Groceries</a>
+                    </li>
+                    <li>
+                        <a href="#" class="rest" style="font-size: 25px">&nbsp;&nbsp;Restaurants</a>
+                    </li>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <br>
             <li>
                 <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
             </li>
@@ -75,11 +98,29 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1><span style="color: white">Gluten Free Living<br>India</span></h1>
-            <h3 style="color: #002366">India's Gluten-Free Food Community</h3>
-            <br>
+            <!-- <h1><span style="color: white">Gluten Free Living<br>India</span></h1>
+            <br> -->
             <!--a href="#about" class="btn btn-dark btn-lg">Find Out More</a-->
-            <!-- <img src="img/taneea.png" style="float: right"> -->
+            <img src="img/taneea.png" style="float: left; height: 200px; margin-top: 50px">
+            <h2 style="color: #fff; margin-top: 100px;text-align: left; font-family: Trebuchet MS;font-size: 32px">India's Gluten-Free<br>Food Community</h2>
+            <div class="col-md-4" style="float: right">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <a href="https://www.facebook.com/pages/Gluten-Free-Living-India/911762485535666"><i class="fa fa-facebook fa-stack-1x fa-inverse" style="background-color: #fff; color: #002366; border-radius: 20px"></i></a>
+                </span>
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <a href=""><i class="fa fa-twitter fa-stack-1x fa-inverse" style="background-color: #fff; color: #002366; border-radius: 20px"></i></a>
+                </span>
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <a href=""><i class="fa fa-instagram fa-stack-1x fa-inverse" style="background-color: #fff; color: #002366; border-radius: 20px"></i></a>
+                </span>
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <a href=""><i class="fa fa-envelope fa-stack-1x fa-inverse" style="background-color: #fff; color: #002366; border-radius: 20px"></i></a>
+                </span>
+            </div>
         </div>
     </header>
 
@@ -99,7 +140,7 @@
             </div>
             <!-- /.row -->
             <a href="#" class="fb1" style="text-decoration: none">
-             W H Y 
+             W H A T 
             </a>
         </div>
         <!-- /.container -->
@@ -179,7 +220,7 @@
             </div>
             <!-- /.row -->
             <a href="#" class="fb2" style="text-decoration: none">
-             W H A T  
+             W H Y  
             </a>
         </div>
         <!-- /.container -->
@@ -260,7 +301,7 @@
                             <a href="#" style="color: #002366"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#" style="color: #002366"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            <a href="#" style="color: #002366"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
@@ -308,6 +349,11 @@
                 }
             }
         });
+    });
+
+    $('.grocery,.rest').hide();
+    $('.where').hover(function(){
+        $('.grocery,.rest').slideToggle('fast');
     });
 
      // $(document).ready(function(){
