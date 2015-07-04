@@ -103,12 +103,12 @@
             <br> -->
             <!--a href="#about" class="btn btn-dark btn-lg">Find Out More</a-->
                 <div class="col-md-4">
-                    <img src="img/taneea.png" style="float: left; height: 200px">
+                    <img src="img/taneea.png" style="float: left; height: 200px; margin-top: 20%">
                 </div>
                 <div class="col-md-4">
-                    <h2 style="color: #fff; font-family: Trebuchet MS;font-size: 32px; margin-top: -60%; margin-left: -60%">India's Gluten-Free Food Community</h2>
+                    <h2 style="color: #fff; font-family: Trebuchet MS;font-size: 32px; margin-top: 50%; margin-left: -40%; text-align: left">India's Gluten-Free Food Community</h2>
                 </div>
-                <div class="col-md-4" style="float: right; margin-top: -12%; margin-right: -40%">
+                <div class="col-md-4" style="float: right; margin-top: 20%; margin-right: -42%">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <a href="https://www.facebook.com/pages/Gluten-Free-Living-India/911762485535666"><i class="fa fa-facebook fa-stack-1x fa-inverse" style="background-color: #fff; color: #002366; border-radius: 20px"></i></a>
@@ -128,8 +128,8 @@
                 </div>
         </div>
         <div class="sslide">
-                <div><img src="img/portfolio-1.jpg"></div>
-                <div><img src="img/lr.jpg"></div>
+            <div><img src="img/portfolio-1.jpg" style="margin-left: 30%; margin-top: 1%"></div>
+            <div><img src="img/portfolio-2.jpg" style="margin-left: 30%; margin-top: 1%"></div>
         </div>
     </header>
 
@@ -374,8 +374,9 @@
     $(document).ready(function(){
         $('.sslide').slick({
             autoplay: true,
-            dots: true,
-            mobileFirst: true,
+            autoplaySpeed: 1000,
+            pauseOnHover: false,
+            //dots: true,
             arrows: false
         });
     });
