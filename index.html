@@ -18,6 +18,7 @@
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 
 
     <!-- Custom Fonts -->
@@ -97,13 +98,12 @@
 <div class="div1" id="fullpage">    
     <!-- Header -->
     <header id="top" class="section header">
-        <div class="row">
-            <div class="text-vertical-center">
+        <div class="text-vertical-center">
             <!-- <h1><span style="color: white">Gluten Free Living<br>India</span></h1>
             <br> -->
             <!--a href="#about" class="btn btn-dark btn-lg">Find Out More</a-->
                 <div class="col-md-4">
-                    <img src="img/taneea.png" style="float: left; height: 200px; margin-top: -85%">
+                    <img src="img/taneea.png" style="float: left; height: 200px">
                 </div>
                 <div class="col-md-4">
                     <h2 style="color: #fff; font-family: Trebuchet MS;font-size: 32px; margin-top: -60%; margin-left: -60%">India's Gluten-Free Food Community</h2>
@@ -126,9 +126,10 @@
                         <a href=""><i class="fa fa-envelope fa-stack-1x fa-inverse" style="background-color: #fff; color: #002366; border-radius: 20px"></i></a>
                     </span>
                 </div>
-            </div>
         </div>
-        <div class="row" style="background-color: #fff">
+        <div class="sslide">
+                <div><img src="img/portfolio-1.jpg"></div>
+                <div><img src="img/lr.jpg"></div>
         </div>
     </header>
 
@@ -328,6 +329,7 @@
     <!-- Custom Theme JavaScript -->
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
@@ -366,6 +368,15 @@
     $(document).ready(function() {
         $('#fullpage').fullpage({
             fitToSection: false
+        });
+    });
+
+    $(document).ready(function(){
+        $('.sslide').slick({
+            autoplay: true,
+            dots: true,
+            mobileFirst: true,
+            arrows: false
         });
     });
 
