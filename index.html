@@ -19,6 +19,7 @@
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
 
     <!-- Custom Fonts -->
@@ -378,7 +379,9 @@
             autoplay: true,
             autoplaySpeed: 1000,
             pauseOnHover: false,
-            //dots: true,
+            pauseOnDotsHover: true,
+            dots: true,
+            respondTo: window,
             arrows: false
         });
     });
