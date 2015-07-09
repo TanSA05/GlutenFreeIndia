@@ -95,6 +95,29 @@ body {
     z-index: 10;
 }
 
+.fb2-1{
+    width: 0.5em;
+    letter-spacing: 100px;    
+    display: inline-block;
+    padding: 1% 2%;
+    padding-right: 40px;
+    font-size: 30px;
+    line-height: 200%;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    color:  white;
+    background-color: #000000;
+    border-radius: 4px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transition: 0.25s;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    z-index: 10;
+}
+
 .fb3{
     width: 0.5em;
     letter-spacing: 100px;    
@@ -116,6 +139,47 @@ body {
     top: 20%;
     left: 0px;
     z-index: 10;
+}
+
+#circle1{
+    width: 250px;
+    height: 250px;
+    background: #F94D00;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 150px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 40px;
+}
+
+#circle2{
+    width: 250px;
+    height: 250px;
+    background: #F94D00;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 150px;
+    float: right;
+    text-align: center;
+    line-height: 250px;
+    color: #fff;
+    font-size: 40px;
+}
+
+#circle3{
+    width: 500px;
+    height: 250px;
+    background: #F94D00;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 150px;
+    margin-left: 28%;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
 }
 
 .text-vertical-center {
