@@ -58,7 +58,7 @@
             <!-- <li>
                 <a href="#top" onclick = $("#menu-close").click(); >Home</a>
             </li> -->
-            <li>
+            <!-- <li>
                 <a href="#about" onclick = $("#menu-close").click(); >WHAT</a>
             </li>
             <li>
@@ -67,7 +67,7 @@
             <li>
                 <a href="#portfolio" onclick = $("#menu-close").click(); >HOW</a>
             </li>
-            <br>
+            <br> -->
             <li>
                 <a href="#">Celiac Disease</a>
             </li>
@@ -75,7 +75,7 @@
                 <a href="#">Wheat Allergy</a>
             </li>
             <li>
-                <a href="#">Gluten &nbsp;&nbsp;Sensitivity</a>
+                <a href="#">Gluten &nbsp;&nbsp;&nbsp;Sensitivity</a>
             </li>
             <li>
                 <a href="#" class="where">Where</a>
@@ -285,12 +285,18 @@
             <div class="row">
                 <div class="col-lg-6" style="float: right">
                     <div id="circle1">
-                        Non-Celiac<br>Gluten
+                        <h1>Non-Celiac<br>Gluten</h1>
+                        <div id="acircle1">
+                            <h3>Fact #1<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div id="circle2">
-                        Wheat Allergy
+                        <h1 style="line-height: 6">Wheat Allergy</h1>
+                        <div id="acircle2">
+                            <h3 style="line-height: 1; margin-top: 33%">Fact #1<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -298,7 +304,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div id="circle3">
-                                    <br>Gluten Free Food as a healthier alternative
+                        <h1><br><br>Gluten Free Food as a healthier alternative</h1>
+                        <div id="acircle3">
+                            <h3><br><br><br>Fact #1<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -449,8 +458,36 @@
     });
 
     $('.grocery,.rest').hide();
-    $('.where').hover(function(){
+    $('.where').click(function(){
         $('.grocery,.rest').slideToggle('fast');
+    });
+
+    $('#acircle1,#acircle2,#acircle3').hide();
+    $('#circle1').mouseenter(function(){
+        $('#acircle1').fadeIn();
+        $('#circle1>h1').hide();
+    });
+    $('#circle1').mouseleave(function(){
+        $('#acircle1').hide();
+        $('#circle1>h1').show();
+    });
+
+    $('#circle2').mouseenter(function(){
+        $('#acircle2').fadeIn();
+        $('#circle2>h1').hide();
+    });
+    $('#circle2').mouseleave(function(){
+        $('#acircle2').hide();
+        $('#circle2>h1').show();
+    });
+
+    $('#circle3').mouseenter(function(){
+        $('#acircle3').fadeIn();
+        $('#circle3>h1').hide();
+    });
+    $('#circle3').mouseleave(function(){
+        $('#acircle3').hide();
+        $('#circle3>h1').show();
     });
 
     $(document).ready(function() {
