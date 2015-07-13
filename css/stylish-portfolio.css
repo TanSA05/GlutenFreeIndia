@@ -107,7 +107,7 @@ body {
     vertical-align: middle;
     cursor: pointer;
     color:  white;
-    background-color: #F94D00;
+    background-color: #E79170;
     border-radius: 4px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -224,12 +224,6 @@ body {
 
 hr.small {
     max-width: 100px;
-}
-
-h2.footh2{
-    text-decoration: underline;
-    -moz-text-decoration-color: #F94D00;
-    text-decoration-color: #F94D00;
 }
 
 /* Navbar Fixed-Top */
