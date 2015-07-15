@@ -484,7 +484,15 @@ ul.nav-tabs.affix{
 .tile3{
     width: 100%; 
     height: 200px;
-    background-image: url("../img/portfolio-3.jpg");
+    background-image: url("../img/dining.jpg");
+    color: #F94D00;
+    font-size: 30px;
+}
+ 
+.tile4{
+    width: 100%; 
+    height: 200px;
+    background-image: url("../img/recipes1.jpg");
     color: #F94D00;
     font-size: 30px;
 }
