@@ -36,7 +36,7 @@
     <![endif]-->
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#myScrollspy"> 
 
 <!-- Navigation -->
     <nav class="navbar navbar-default" style="border: none; margin-bottom: 0">
@@ -135,7 +135,7 @@
     <section class="source">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-8 col-sm-6">
                     <h2 id="sec0" style="color: blue; font-weight: bold">Definition:</h2>
                     <h3>Gluten is found primarily in wheat and related grains like rye and barley. It a combination of 2 proteins - Gliadin and Glutenin - which are responsible for the elastic consistency of dough. It makes food made from wheat flour chewy and gives bread its sponge like properties.</h3>
                     <hr>
@@ -231,17 +231,20 @@
                         <li>Shared Cutlery: If the same spoons/knives are used for both foods, those containing gluten and those without.</li>
                     </ul>
                 </div>
-                <div class="col-lg-4" id="rightCol">
+                <div class="col-lg-4 col-sm-1" id="myScrollspy">
                     <br><br>
-                    <ul class="nav nav-tabs nav-stacked" data-spy="affixed" id="sidebar1">
-                      <li><a href="#sec0">Section 0</a></li>
-                      <li><a href="#sec1">Section 1</a></li>
-                      <li><a href="#sec2">Section 2</a></li>
-                      <li><a href="#sec3">Section 3</a></li>
-                      <li><a href="#sec4">Section 4</a></li>
-                      <li><a href="#sec5">Section 5</a></li>
-                      <li><a href="#sec6">Section 6</a></li>
-                      <li><a href="#sec7">Section 7</a></li>
+                    <ul class="nav nav-tabs nav-stacked" data-spy="affix" id="sidebar1" data-offset-top="250">
+                        <li><a href="#sec0">Definition</a></li>
+                        <li><a href="#sec1">Sources of Gluten</a>
+                            <ul>
+                                <li><a href="#sec2">Grains and their derivatives</a></li>
+                                <li><a href="#sec3">Common Foods</a></li>
+                                <li><a href="#sec4">Foods that MAY contain Gluten</a></li>
+                                <li><a href="#sec5">Alcoholic Beverages</a></li>
+                                <li><a href="#sec6">Cosmetics, Toothpastes<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Medication</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#sec7">Cross Contamination</a></li>
                     </ul>
                 </div>
             </div>
@@ -335,13 +338,6 @@ width: 160px">
     $('.grocery,.rest').hide();
     $('.where').click(function(){
         $('.grocery,.rest').slideToggle('fast');
-    });
-
-    $(document).ready(function(){/* activate sidebar */
-        $('#sidebar1').affix({
-          offset: {
-            top: 500
-          }
     });
 
     </script>

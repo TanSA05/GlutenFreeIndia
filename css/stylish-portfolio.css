@@ -341,27 +341,57 @@ ul.two li:before{
 
 /* Side Navbar */
 
-ul.nav-tabs.affix{
- top:   30px;
+ul.nav-tabs{
+        width: 300px;
+        margin-top: 20px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+        background-color: #ededed;
 }
 
-@media (min-width: 979px) {
-  #sidebar.affix-top {
+ul.nav-tabs li{
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+
+ul.nav-tabs li a{
+    margin: 0;
+    padding: 5% 10%;
+    border-radius: 0;
+}
+
+ul.nav-tabs li li{
+    margin: 0;
+    padding: 5% 5%;
+    border-radius: 0;
+}
+
+ul.nav-tabs a:hover{
+    color: #fff;
+    background: #F94D00;
+}
+
+ul.nav-tabs.affix{
+    top: 30px;
+}
+
+@media (max-width: 768px) {
+  #sidebar1.affix-top {
     position: static;
     margin-top:30px;
     width:228px;
   }
   
-  #sidebar.affix {
-    position: fixed;
+  #sidebar1.affix {
+    position: static;
     top:70px;
     width:228px;
   }
 }
 
-#sidebar li.active {
-  border:0 #eee solid;
-  border-right-width:5px;
+ul.nav-tabs li.active a{
+    border:0 #F94D00 solid;
+    border-right-width:5px;
+    color: #000033;
 }
 
 
