@@ -226,6 +226,10 @@ hr.small {
     max-width: 100px;
 }
 
+hr.bold{
+    border-top: 5px solid #eee;
+}
+
 /* Navbar Fixed-Top */
 .container-fluid{
     width: 100%;
