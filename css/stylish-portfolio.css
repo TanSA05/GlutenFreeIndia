@@ -359,14 +359,18 @@ ul.nav-tabs li{
 
 ul.nav-tabs li a{
     margin: 0;
-    padding: 5% 10%;
+    padding: 5% 8%;
     border-radius: 0;
 }
 
 ul.nav-tabs li li{
     margin: 0;
-    padding: 5% 5%;
+    padding: 5% 3%;
     border-radius: 0;
+}
+
+ul.nav-tabs li li a{
+    text-decoration: none;
 }
 
 ul.nav-tabs a:hover{
@@ -381,15 +385,22 @@ ul.nav-tabs.affix{
 @media (max-width: 768px) {
   #sidebar1.affix-top {
     position: static;
-    margin-top:30px;
+    margin-top:20px;
     width:228px;
   }
   
   #sidebar1.affix {
     position: static;
-    top:70px;
+    top:60px;
     width:228px;
   }
+}
+
+@media (max-height: 570px) {
+    #sidebar1{
+        height: 150px;
+        overflow: scroll;
+    }
 }
 
 ul.nav-tabs li.active a{
