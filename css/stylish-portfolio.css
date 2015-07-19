@@ -411,6 +411,11 @@ ul.nav-tabs li.active a{
     color: #000033;
 }
 
+ul.nav-tabs li li.active a{
+    background-color: #fff;
+    color:  #000033;
+}
+
 
 /* Header */
 
