@@ -572,5 +572,7 @@ ul.nav-tabs li li.active a{
 /* Footer */
 
 footer {
-    background-color:  #1c1d1e;                   
+    /*background-color:  #1c1d1e;*/
+    background-color:  #000033;
+    color:  #f4d4aa;                 
 }
