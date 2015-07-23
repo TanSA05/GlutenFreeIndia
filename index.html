@@ -356,23 +356,35 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-6 col-sm-1">
                                 <div class="tile1">
+                                    <div class="hbox1">
+                                        <h4><a href="#" style="color: #fff; font-family: Trebuchet MS">Getting Started</a></h4>
+                                        <div class="extext1"><br><br>Read More</div>
+                                    </div>
                                 </div>
-                                <h3><a href="#" style="color: #000033; font-family: Trebuchet MS">Getting Started</a></h3>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-1">
                                 <div class="tile2">
+                                    <div class="hbox2">
+                                        <h4><a href="#" style="color: #fff; font-family: Trebuchet MS">Groceries Shopping</a></h4>
+                                        <div class="extext2"><br><br>Read More</div>
+                                    </div>
                                 </div>
-                                <h3><a href="#" style="color: #000033; font-family: Trebuchet MS">Groceries Shopping</a></h3>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-1">
                                 <div class="tile3">
+                                    <div class="hbox3">
+                                        <h4><a href="#" style="color: #fff; font-family: Trebuchet MS">Dining Out</a></h4>
+                                        <div class="extext3"><br><br>Read More</div>
+                                    </div>
                                 </div>
-                                <h3><a href="#" style="color: #000033; font-family: Trebuchet MS">Dining Out</a></h3>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-1">
                                 <div class="tile4">
+                                    <div class="hbox4">
+                                        <h4><a href="#" style="color: #fff; font-family: Trebuchet MS">Recipes</a></h4>
+                                        <div class="extext4"><br><br>Read More</div>
+                                    </div>
                                 </div>
-                                <h3><a href="#" style="color: #000033; font-family: Trebuchet MS">Recipes</a></h3>
                             </div>
                         </div>
                     </div>
@@ -517,7 +529,7 @@ width: 160px">
         });
     });
 
-    $('.grocery,.rest').hide();
+    $('.grocery,.rest,.extext1,.extext2,.extext3,.extext4').hide();
     $('.where').click(function(){
         $('.grocery,.rest').slideToggle('fast');
     });
@@ -597,6 +609,66 @@ width: 160px">
             height: "-=20"
         }, 'fast');
     })
+
+    $(document).ready(function(){
+        var boxHeight = $(".hbox1").height();
+        $(".hbox1").mouseenter(function(){
+            $(this).animate({
+                height: "200"
+            });
+            $(".extext1").show();
+        }).mouseleave(function(){
+            $(this).animate({
+                height: boxHeight
+            });
+            $(".extext1").hide();
+        });
+    });
+
+    $(document).ready(function(){
+        var boxHeight = $(".hbox2").height();
+        $(".hbox2").mouseenter(function(){
+            $(this).animate({
+                height: "200"
+            });
+            $(".extext2").show();
+        }).mouseleave(function(){
+            $(this).animate({
+                height: boxHeight
+            });
+            $(".extext2").hide();
+        });
+    });
+
+    $(document).ready(function(){
+        var boxHeight = $(".hbox3").height();
+        $(".hbox3").mouseenter(function(){
+            $(this).animate({
+                height: "200"
+            });
+            $(".extext3").show();
+        }).mouseleave(function(){
+            $(this).animate({
+                height: boxHeight
+            });
+            $(".extext3").hide();
+        });
+    });
+
+    $(document).ready(function(){
+        var boxHeight = $(".hbox4").height();
+        $(".hbox4").mouseenter(function(){
+            $(this).animate({
+                height: "200"
+            });
+            $(".extext4").show();
+        }).mouseleave(function(){
+            $(this).animate({
+                height: boxHeight
+            });
+            $(".extext4").hide();
+        });
+    });
 
     </script>
 

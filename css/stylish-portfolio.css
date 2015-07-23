@@ -525,6 +525,18 @@ ul.nav-tabs li li.active a{
     font-size: 30px;
 }
 
+.hbox1{
+    width: 87%;
+    height: 50px;
+    background-color: rgba(71,47,75,0.5);
+    position: absolute;
+    bottom: 0;
+}
+
+.extext1{
+    color: #fff;
+}
+
 .tile2{
     overflow: hidden;
     background-size: cover;
@@ -535,6 +547,18 @@ ul.nav-tabs li li.active a{
     background-repeat: no-repeat;
     color: #F94D00;
     font-size: 30px;
+}
+
+.hbox2{
+    width: 87%;
+    height: 50px;
+    background-color: rgba(71,47,75,0.5);
+    position: absolute;
+    bottom: 0;
+}
+
+.extext2{
+    color: #fff;
 }
 
 .tile3{
@@ -548,6 +572,18 @@ ul.nav-tabs li li.active a{
     color: #F94D00;
     font-size: 30px;
 }
+
+.hbox3{
+    width: 87%;
+    height: 50px;
+    background-color: rgba(71,47,75,0.5);
+    position: absolute;
+    bottom: 0;
+}
+
+.extext3{
+    color: #fff;
+}
  
 .tile4{
     width: 100%; 
@@ -555,6 +591,18 @@ ul.nav-tabs li li.active a{
     background-image: url("../img/recipes1.jpg");
     color: #F94D00;
     font-size: 30px;
+}
+
+.hbox4{
+    width: 87%;
+    height: 50px;
+    background-color: rgba(71,47,75,0.5);
+    position: absolute;
+    bottom: 0;
+}
+
+.extext4{
+    color: #fff;
 }
 
 #card1{
